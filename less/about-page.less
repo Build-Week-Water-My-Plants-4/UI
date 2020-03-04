@@ -8,6 +8,11 @@
     border:15px solid white;
     padding: 2%;
     
+    @media @phone {
+        margin:10px;
+        
+    }
+    
     
 }
 
@@ -17,6 +22,12 @@
     align-items: center;
     align-content: space-between;
     padding:2%;
+
+    @media @phone {
+        flex-direction: column;
+        width:450px;
+        height: 210px;
+    }
 
 
 
@@ -61,7 +72,9 @@
     padding:2%;
 
 
-
+    @media @phone {
+        display:none;
+    }
    
     
 
@@ -71,13 +84,16 @@
         // background-color: yellow;
         height:145px;
         max-width:80%;
-        flex-wrap: no-wrap;
         padding:2%;
         margin: 4%;
         text-align: center;
         color:black;
         border: 4px solid white;
         box-shadow: 5px 4px 10px 4px rgba(0, 0, 0, 0.25);
+
+       
+
+        
     }
 
     h2 {
@@ -94,3 +110,28 @@
     }
     
 }
+
+
+.buttonA {
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 7%;
+
+    @media @phone {
+        margin-top: 300px;
+        padding-right: 1%;;
+    }
+ 
+    
+    .btn {
+        .custom-btn(#2e4422, 200px, white);
+    }
+
+    a {
+        text-decoration: none;
+        color:white;
+    }
+
+}
+  

@@ -6,6 +6,13 @@ header {
     height: 130px;
     background-color: white;
 
+    @media @phone {
+        font-size:3px;
+        text-align:center;
+        // background-color: yellow;
+        height:100px;
+    }
+
   
    nav {
       font-size: 25px;
@@ -14,11 +21,21 @@ header {
       font-family: 'Source Sans Pro', ;
       padding:6%;
       margin:1%;
-      
-      a{
-          text-decoration: none;
+      @media @phone {
+        font-size:15px;
       }
-  
+
+     
+    
+      
+      a {
+          text-decoration: none;
+          color:black;
+          
+          @media @phone {
+           padding:2%;
+          }
+      }
     
   }
 
@@ -26,6 +43,10 @@ header {
 
 .logo {
     height:130px;
+
+    @media @phone {
+        height: 100px;;
+    }
 }
 
 .name {
@@ -33,6 +54,13 @@ header {
     color: #1A4704;
     font-family: 'Handlee', ;
     padding:4.4%;
+
+    @media @phone {
+        font-size:25px;
+        text-align:center;
+        // background-color: yellow;
+    }
+
 
 }
 

@@ -7,6 +7,11 @@ body {
     width:1,000px;
     border:15px solid white;
     padding: 2%;
+
+    @media @phone {
+        margin:10px;
+        
+    }
     
     
 }
@@ -29,10 +34,15 @@ body {
         width:800px;
         padding:2%;
         border:5px solid white;
-        margin-bottom: 4%;
+        // margin-bottom: 3%;
         text-align: center;
         color: #153d01;
         box-shadow: 5px 4px 10px 4px rgba(0, 0, 0, 0.25);
+
+        @media @phone {
+            width:400px;
+            height: 190px;
+        }
     }
 
     h2 {
@@ -45,6 +55,9 @@ body {
         color:black;
         font-family: 'Source Sans Pro', ;
         font-size: 18px;
+
+        
+        
        
     }
     
@@ -54,10 +67,22 @@ body {
     text-align: center;
     display:flex;
     justify-content: center;
-    
+    margin-bottom: 7%;
+
+    @media @phone {
+        margin-bottom: 0;
+        padding-right: 1%;;
     }
+ 
     
     .btn {
         .custom-btn(#2e4422, 200px, white);
-        
+    }
+
+    a {
+        text-decoration: none;
+        color:white;
+    }
+
 }
+        
